@@ -36,19 +36,19 @@ console.log(typeof userAge);
 //3
 let priceTicket = (userKm * 0.21).toFixed();
 const resultElement = document.getElementById('result');
-resultElement.innerText = 'Il prezzo del biglietto è di' + priceTicket + '€';
+resultElement.innerText = 'Il prezzo del biglietto è di' / + priceTicket + '€';
 
 //3b
 if (userAge < 18) {
     const underEighteen = (priceTicket / 100) * 20;
     let priceTicketSales = (priceTicket - underEighteen).toFixed();
     const resultElement = document.getElementById('result');
-    resultElement.innerText = 'Il prezzo del biglietto essendo minorenne è di' + priceTicketSales + '€';
+    resultElement.innerText = 'Il prezzo del biglietto essendo minorenne è di' / + priceTicketSales + '€';
 }
 
 else if (userAge > 65) {
     const overSixtyfive = (priceTicket / 100) * 40;
     let priceTicketSales = (priceTicket - overSixtyfive).toFixed();
     const resultElement = document.getElementById('result');
-    resultElement.innerText = 'Il prezzo del biglietto essendo un over 65 è di' + priceTicketSales + '€';
+    resultElement.innerText = 'Il prezzo del biglietto essendo un over 65 è di' / + priceTicketSales + '€';
 }
